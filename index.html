@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment on Hive</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@hiveio/hive-js/dist/hive.min.js"></script>
+    <script src="script.js" defer></script> <!-- Include the external JavaScript file -->
+</head>
+<body>
+    <h2>Post Comment to Hive</h2>
+    <label>Private Posting Key:</label>
+    <input type="password" id="wif" placeholder="5J..." oninput="saveData()">
+    <br>
+    <label>Your Hive Username:</label>
+    <input type="text" id="author" placeholder="your-username" oninput="saveData()">
+    <br>
+    <label>Parent Post URL:</label>
+    <input type="text" id="parent" placeholder="https://hive.blog/@author/permlink">
+    <br>
+    <label>Comment Body:</label>
+    <textarea id="commentBody" placeholder="Write your comment here..."></textarea>
+    <br>
+    <label>Beneficiary Accounts (comma separated):</label>
+    <input type="text" id="beneficiaryAccounts" placeholder="account1, account2" oninput="saveData()">
+    <br>
+    <label>Beneficiary Percentages (comma separated, max 100%):</label>
+    <input type="text" id="beneficiaryPercents" placeholder="50, 50" oninput="saveData()">
+    <br>
+    <button onclick="postComment()">Post Comment</button>
+    <button onclick="clearFields()">Clear URL and Comment</button>
+    <div id="notification" class="notification"></div>
+</body>
+</html>

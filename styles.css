@@ -1,0 +1,143 @@
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    max-width: 500px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styling for labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Styling for inputs and textarea */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+/* Textarea specific styling */
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Button styling */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #1e7e34;
+    transform: translateY(0);
+}
+
+/* Styling for the footer and additional link */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+footer a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+footer a:active {
+    background-color: #004085;
+    transform: translateY(0);
+}
+
+/* Notification styling */
+.notification {
+    padding: 10px;
+    color: white;
+    position: fixed;
+    top: 20px; /* Position from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to exactly center it */
+    border-radius: 5px;
+    font-size: 16px;
+    display: none;
+    width: auto;
+    max-width: 90%; /* Limit the width */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    body {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input, textarea, button {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    footer a {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
